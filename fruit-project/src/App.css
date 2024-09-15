@@ -1,0 +1,535 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.login {
+  background: linear-gradient(to bottom, #3C3D37, #697565);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: sans-serif;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #3C3D37, #697565);
+}
+
+.login input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.login button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  background-color: #0069d9;
+}
+
+.login p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background: linear-gradient(to bottom, #3C3D37, #697565);
+    font-family: sans-serif;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+  }
+  
+  .fruitAi {
+    font-size: 3em;
+    color: #ECDFCC;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0); 
+  
+    }
+  }
+  @keyframes jiggle {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0); 
+  
+    }
+  }
+  .beHealthy {
+    font-size: 1.5em;
+    color: #ECDFCC;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: jiggle 1s infinite;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 250px;
+    height: 250px;
+    background-color: #697565;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: #181C14 1px solid;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: black;
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    font-family: sans-serif;
+    padding: 20px;
+    background: linear-gradient(to bottom, #3C3D37, #697565);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    color: #181C14;
+  }
+  .about h1 {
+    font-size: 2.5em;
+    color: #181C14;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    color: #181C14;
+    line-height: 1.5; 
+    text-align: center;
+    width: 70%; 
+    margin: 0 auto;
+  }
+
+.chat {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(to bottom, #3C3D37, #697565);
+  padding: 20px;
+}
+.chat-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.chat-message {
+  margin-bottom: 20px;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.fruit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fruit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.fruit-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.fruit-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.fruit-card p {
+  font-size: 18px;
+  margin: 0;
+}
+.fruit-details {
+  text-align: center;
+}
+
+.fruit-details img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.fruit-details h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.fruit-details p {
+  font-size: 16px;
+  color: #555;
+}
+
+  .navbar{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background: #181C14;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .navbar ul{
+    display: flex;
+    color: #ECDFCC;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  .navbar li{
+    cursor: pointer;
+  }
+  .navbar li:hover{
+    color: red;
+  }
+  .faq {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background:white ;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  strong {
+    color: black;
+  }
+  
+  button {
+    background-color: #181C14;
+    border: none;
+    color: #ECDFCC;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ECDFCC;
+    color: #181C14;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 18px);
+  }
+  
+  h3 {
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+  }
+  
+  .faq-action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .faq-action-buttons button {
+    background-color: #28a745;
+    margin-right: 10px;
+  }
+  
+  .faq-action-buttons button.delete {
+    background-color: #dc3545;
+  }
+  
+  .faq-action-buttons button.edit {
+    background-color: #ffc107;
+  }
+  
+  .faq-action-buttons button:hover {
+   opacity: 0.9;
+  }
+@media only screen and (max-width: 768px) {
+  .login, .home, .about, .chat, .faq {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .login form, .container, .card-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar .menu-icon {
+    display: block; 
+    font-size: 2em;
+    color: #ECDFCC;
+    cursor: pointer;
+  }
+
+  .navbar .menu {
+    display: none; 
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #181C14;
+    z-index: 1000;
+  }
+
+  .navbar .menu.active {
+    display: block;
+  }
+
+  .navbar .menu li {
+    padding: 10px;
+    color: #ECDFCC;
+    text-align: center;
+  }
+
+  .navbar .menu li:hover {
+    color: red;
+  }
+
+  .faq ul {
+    padding: 0;
+  }
+
+  .faq li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faq-action-buttons {
+    flex-direction: column;
+  }
+
+  .faq-action-buttons button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .chat-box {
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .fruitAi {
+    font-size: 2em;
+  }
+
+  .beHealthy {
+    font-size: 1.2em;
+  }
+
+  .title, .about h1 {
+    font-size: 1.8em;
+  }
+
+  .about p, .faq h2, .faq li {
+    font-size: 1em;
+  }
+}
